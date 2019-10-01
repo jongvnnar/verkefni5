@@ -19,3 +19,68 @@ main {
   max-width: 1500px;
   padding: 20px;
 }
+
+p{
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+h2{
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card{
+  display: flex;
+  background-color: #fff;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  padding: 0.625em;
+  max-width: 470px;
+  max-height: 320px;
+  margin-bottom: 0.625em;
+  word-wrap: break-word;
+  overflow:auto;
+
+  flex-flow: column;
+}
+
+.card__image{
+  width: 9.375em;
+  padding-right: 1.25em;
+}
+
+.card--last{
+  order:-5;
+}
+
+.card__body{
+  display: flex;
+  flex-direction: row;
+  flex:1;
+}
+
+.card__text{
+  flex: 0 1 auto;
+  min-width: 18.75em;
+  word-wrap: break-word;
+}
+
+.card__list{
+  display: flex;
+  flex-flow: row wrap;
+  list-style-type: none;
+  font-weight: bold;
+}
+
+.card__list-item{
+  display: flex;
+  flex-flow: wrap;
+  padding-right: 0.5em;
+}
