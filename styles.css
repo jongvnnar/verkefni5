@@ -22,12 +22,12 @@ main {
 
 p{
   font-size: 1rem;
-  line-height: 1.2rem;
+  line-height: 1.2;
 }
 
 h2{
   font-size: 1.5rem;
-  line-height: 1.5rem;
+  line-height: 1.5;
 }
 
 .cards{
@@ -45,10 +45,9 @@ h2{
   max-width: 470px;
   max-height: 320px;
   margin-bottom: 0.625em;
-  word-wrap: break-word;
   overflow:auto;
-
-  flex-flow: column;
+  word-wrap: break-word;
+  flex-direction: column;
 }
 
 .card__image{
@@ -62,14 +61,11 @@ h2{
 
 .card__body{
   display: flex;
-  flex-direction: row;
-  flex:1;
+  flex-grow:1;
 }
 
 .card__text{
-  flex: 0 1 auto;
-  min-width: 18.75em;
-  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .card__list{
@@ -81,6 +77,6 @@ h2{
 
 .card__list-item{
   display: flex;
-  flex-flow: wrap;
+  flex-flow: row wrap;
   padding-right: 0.5em;
 }
